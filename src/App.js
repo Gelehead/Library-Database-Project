@@ -4,12 +4,20 @@ import './App.css';
 import Navbar from './components/Navbar';
 import QueryButton from './components/QueryButton';
 import QueryResult from './components/QueryResult';
+import Footer from './components/Footer';
 
 function App() {
   const [queryData, setQueryData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [activeQuery, setActiveQuery] = useState(null);
+
+  const teamMembers = [
+    'Meriem Ghaoui',
+    'Mohamed Thameur Sassi',
+    'Mariam Traore',
+    'Oscar Lavolet'
+  ];
 
   const handleQueryClick = async (queryNumber) => {
     setLoading(true);
@@ -62,6 +70,7 @@ function App() {
           </div>
         )}
       </div>
+      <Footer teamMembers={teamMembers} />
     </div>
   );
 }

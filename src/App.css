@@ -22,6 +22,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    flex: 1; 
   }
   
   h1 {
@@ -145,5 +146,74 @@
     
     .navbar-info {
       margin-top: 5px;
+    }
+
+    .footer {
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px 0;
+        margin-top: auto;
+        width: 100%;
+    }
+    
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .project-info {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    
+    .team-members {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team-title {
+        font-size: 1rem;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+    
+    .members-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .member {
+        font-size: 0.9rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 5px 12px;
+        border-radius: 15px;
+    }
+    
+    @media (min-width: 768px) {
+        .footer-content {
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+        }
+        
+        .team-members {
+            align-items: flex-end;
+        }
+        
+        .project-info {
+            margin-bottom: 0;
+        }
     }
   }

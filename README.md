@@ -20,8 +20,8 @@ Cette application permet de visualiser les résultats de 4 requêtes SQL spécif
 
 1. Clonez le dépôt:
    ```
-   git clone <URL-du-dépôt>
-   cd bibliotheque-app
+   git clone https://github.com/Gelehead/Library-Database-Project.git
+   cd Library-Database-P
    ```
 
 2. Installez les dépendances:
@@ -55,21 +55,23 @@ Cette commande lancera simultanément le serveur backend (sur le port 5000) et l
 
 L'application affiche les résultats des 4 requêtes SQL définies dans le fichier `server/queries.js`:
 
-1. **Requête 1**: Liste des livres empruntés par un adhérent spécifique
-2. **Requête 2**: Livres les plus populaires par genre
-3. **Requête 3**: Adhérents avec des retards de retour
-4. **Requête 4**: Livres commandés mais pas encore empruntés
+1. **Requête 1**: aaa
+2. **Requête 2**: aaa
+3. **Requête 3**: aaa
+4. **Requête 4**: aaa
 
 ## Technologies utilisées
 
 - **Frontend**: React, CSS
 - **Backend**: Node.js, Express
-- **Base de données**: PostgreSQL
+- **Base de données**: SQL
 
 ## Auteurs
 
-- [Votre nom]
-- [Noms des membres du groupe]
+- Meriem Ghaoui
+- Mohamed Thameur Sassi
+- Mariam Traore
+- Oscar Lavolet
 
 ## Licence
 
