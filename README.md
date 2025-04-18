@@ -10,13 +10,19 @@ Cette application permet de visualiser les résultats de 4 requêtes SQL spécif
 - **Backend**: Serveur Express avec PostgreSQL
 - **Base de données**: Schéma normalisé selon les instructions du projet
 
-## Prérequis
+## Différentes façons de consulter le travail
+
+1. Consulter la github page [ici](https://gelehead.github.io/Library-Database-Project/)
+
+2. suivre les étapes d'installation local qui suivent
+
+### Prérequis
 
 - Node.js (v14 ou plus récent)
 - npm (v6 ou plus récent)
 - PostgreSQL (v12 ou plus récent)
 
-## Installation
+### Installation
 
 1. Clonez le dépôt:
    ```
@@ -36,7 +42,7 @@ Cette application permet de visualiser les résultats de 4 requêtes SQL spécif
 4. Configurez les paramètres de connexion à la base de données:
    - Modifiez le fichier `server/server.js` avec vos informations de connexion (utilisateur, mot de passe, etc.)
 
-## Démarrage de l'application
+### Démarrage de l'application
 
 Pour démarrer l'application en mode développement:
 
@@ -46,12 +52,12 @@ npm run dev
 
 Cette commande lancera simultanément le serveur backend (sur le port 5000) et le frontend (sur le port 3000).
 
-## Utilisation
+### Utilisation
 
 1. Ouvrez votre navigateur à l'adresse [http://localhost:3000](http://localhost:3000)
 2. Cliquez sur l'un des quatre boutons de requête pour afficher les résultats correspondants
 
-## Fonctionnalités
+### Fonctionnalités
 
 L'application affiche les résultats des 4 requêtes SQL définies dans le fichier `server/queries.js`:
 
@@ -60,19 +66,15 @@ L'application affiche les résultats des 4 requêtes SQL définies dans le fichi
 3. **Requête 3**: aaa
 4. **Requête 4**: aaa
 
-## Technologies utilisées
+### Technologies utilisées
 
 - **Frontend**: React, CSS
 - **Backend**: Node.js, Express
 - **Base de données**: SQL
 
-## Auteurs
+### Auteurs
 
 - Meriem Ghaoui
 - Mohamed Thameur Sassi
 - Mariam Traore
 - Oscar Lavolet
-
-## Licence
-
-Ce projet est réalisé dans le cadre du cours IFT2935 - Base de données à l'Université de Montréal.
