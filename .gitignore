@@ -1,4 +1,4 @@
-/node_modules
+**/node_modules
 /build
 struct.md
 .struct.md.un~

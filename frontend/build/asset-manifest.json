@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Library-Database-Project/static/css/main.e1640fe4.css",
+    "main.js": "/Library-Database-Project/static/js/main.d005dc0f.js",
+    "index.html": "/Library-Database-Project/index.html",
+    "main.e1640fe4.css.map": "/Library-Database-Project/static/css/main.e1640fe4.css.map",
+    "main.d005dc0f.js.map": "/Library-Database-Project/static/js/main.d005dc0f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1640fe4.css",
+    "static/js/main.d005dc0f.js"
+  ]
+}
