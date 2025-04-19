@@ -216,4 +216,40 @@
             margin-bottom: 0;
         }
     }
+    /* Additional styles for updated QueryButton - add to src/App.css */
+
+    .query-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin: 5px 0;
+      color: #f8f9fa;
+    }
+
+    .query-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      min-height: 120px;
+      text-align: center;
+    }
+
+    .query-button:hover {
+      background-color: #2980b9;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .query-description {
+      font-size: 0.9rem;
+      text-align: center;
+      opacity: 0.9;
+    }
   }

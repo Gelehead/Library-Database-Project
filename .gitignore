@@ -4,3 +4,4 @@ struct.md
 .struct.md.un~
 package.json
 package-lock.json
+*.env

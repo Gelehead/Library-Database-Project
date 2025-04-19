@@ -4,6 +4,9 @@
   "description": "Application web pour le projet final du cours IFT2935 - Base de données.",
   "main": "index.js",
   "scripts": {
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
