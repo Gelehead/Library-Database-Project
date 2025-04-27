@@ -35,9 +35,20 @@ Cette application permet de visualiser les résultats de 4 requêtes SQL spécif
    npm install
    ```
 
+3. Créer un fichier `.env` avec les informations suivantes
+      ```
+      PORT=5000
+      DB_USER=postgres
+      DB_PASSWORD=your_password
+      DB_HOST=localhost
+      DB_NAME=bibliotheque
+      DB_PORT=5432
+      ```
+   - modifier "your_password" par votre mot de passe
+
 3. Configurez la base de données:
    - Créez une base de données PostgreSQL nommée `bibliotheque`
-   - Exécutez le script SQL fourni dans le fichier `setup.sql` pour créer les tables et insérer les données
+   - Exécutez le script SQL fourni dans le fichier `projetdb.sql` pour créer les tables et insérer les données
 
 4. Configurez les paramètres de connexion à la base de données:
    - Modifiez le fichier `server/server.js` avec vos informations de connexion (utilisateur, mot de passe, etc.)

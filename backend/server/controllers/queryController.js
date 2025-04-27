@@ -1,20 +1,16 @@
-/**
- * Controller for database queries
- */
 const db = require('../config/db');
 const queries = require('../utils/queryHelper');
 
-// Controller methods for each query
-exports.executeQuery1 = async (req, res) => {
+const executeQuery = (queryNumber) => async (req, res) => {
   try {
-    const result = await db.query(queries.query1);
+    const result = await db.query(queries[`query${queryNumber}`]);
     res.json({
       success: true,
       data: result.rows,
       message: 'Query executed successfully'
     });
   } catch (error) {
-    console.error('Error executing query 1:', error);
+    console.error(`Error executing query ${queryNumber}:`, error);
     res.status(500).json({
       success: false,
       message: 'Error executing query',
@@ -23,56 +19,22 @@ exports.executeQuery1 = async (req, res) => {
   }
 };
 
-exports.executeQuery2 = async (req, res) => {
-  try {
-    const result = await db.query(queries.query2);
-    res.json({
-      success: true,
-      data: result.rows,
-      message: 'Query executed successfully'
-    });
-  } catch (error) {
-    console.error('Error executing query 2:', error);
-    res.status(500).json({
-      success: false,
-      message: 'Error executing query',
-      error: error.message
-    });
-  }
-};
+exports.executeQuery1 = executeQuery(1);
+exports.executeQuery2 = executeQuery(2);
+exports.executeQuery3 = executeQuery(3);
+exports.executeQuery4 = executeQuery(4);
+exports.executeQuery5 = executeQuery(5);
+exports.executeQuery6 = executeQuery(6);
+exports.executeQuery7 = executeQuery(7);
+exports.executeQuery8 = executeQuery(8);
+exports.executeQuery9 = executeQuery(9);
+exports.executeQuery10 = executeQuery(10);
+exports.executeQuery11 = executeQuery(11);
 
-exports.executeQuery3 = async (req, res) => {
-  try {
-    const result = await db.query(queries.query3);
-    res.json({
-      success: true,
-      data: result.rows,
-      message: 'Query executed successfully'
-    });
-  } catch (error) {
-    console.error('Error executing query 3:', error);
-    res.status(500).json({
-      success: false,
-      message: 'Error executing query',
-      error: error.message
-    });
-  }
-};
-
-exports.executeQuery4 = async (req, res) => {
-  try {
-    const result = await db.query(queries.query4);
-    res.json({
-      success: true,
-      data: result.rows,
-      message: 'Query executed successfully'
-    });
-  } catch (error) {
-    console.error('Error executing query 4:', error);
-    res.status(500).json({
-      success: false,
-      message: 'Error executing query',
-      error: error.message
-    });
-  }
+exports.testConnection = (req, res) => {
+  res.json({
+    success: true,
+    message: 'API connection successful',
+    timestamp: new Date().toISOString()
+  });
 };

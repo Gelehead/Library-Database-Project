@@ -1,10 +1,6 @@
-/**
- * Database connection configuration
- */
 const { Pool } = require('pg');
 require('dotenv').config();
 
-// Create connection pool
 const pool = new Pool({
   user: process.env.DB_USER,
   host: process.env.DB_HOST,
@@ -16,7 +12,6 @@ const pool = new Pool({
 console.log('Password type:', typeof process.env.DB_PASSWORD);
 console.log('Password value:', process.env.DB_PASSWORD ? '[REDACTED]' : undefined);
 
-// Test the connection
 pool.query('SELECT NOW()', (err, res) => {
   if (err) {
     console.error('Error connecting to the database', err);
