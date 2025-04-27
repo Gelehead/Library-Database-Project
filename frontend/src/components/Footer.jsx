@@ -1,22 +1,37 @@
-// src/components/Footer.jsx
 import React from 'react';
 
 const Footer = ({ teamMembers }) => {
+  const currentYear = new Date().getFullYear();
+  
   return (
-    <footer className="navbar footer">
-      <div className="footer-brand">
-        <span>IFT2935 - Projet Final • Hiver 2025</span>
-      </div>
-      <div className="team-info">
-        <span className="team-label">Équipe:</span>
-        <div className="team-members">
-          {teamMembers.map((member, index) => (
-            <span key={index} className="member-name">
-              {member}
-              {index < teamMembers.length - 1 && " • "}
-            </span>
-          ))}
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="footer-section">
+          <h3>Projet Bibliothèque IFT2935</h3>
+          <p>Système de gestion de bibliothèque développé dans le cadre du cours IFT2935.</p>
         </div>
+        
+        <div className="footer-section">
+          <h3>Équipe</h3>
+          <ul className="team-list">
+            {teamMembers.map((member, index) => (
+              <li key={index}>{member}</li>
+            ))}
+          </ul>
+        </div>
+        
+        <div className="footer-section">
+          <h3>Technologies</h3>
+          <ul className="tech-list">
+            <li>React</li>
+            <li>Node.js / Express</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div className="footer-bottom">
+        <p>&copy; {currentYear} IFT2935 - Amogus sus </p>
       </div>
     </footer>
   );

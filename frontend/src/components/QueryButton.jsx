@@ -1,13 +1,15 @@
-// src/components/QueryButton.jsx
 import React from 'react';
 
 const QueryButton = ({ queryNumber, onClick, title, description }) => {
   return (
-    <button className="query-button" onClick={onClick}>
-      <span className="query-number">Requête {queryNumber}</span>
-      <span className="query-title">{title}</span>
-      <span className="query-description">{description}</span>
-    </button>
+    <tr className="query-row" onClick={onClick}>
+      <td className="query-number">{queryNumber}</td>
+      <td className="query-title">{title}</td>
+      <td className="query-description">{description}</td>
+      <td className="query-action">
+        <button className="execute-button">Exécuter</button>
+      </td>
+    </tr>
   );
 };
 
