@@ -171,3 +171,8 @@ Notez que le numéro des requêtes ne sont pas cohérents, c est parce que plusi
 - Mohamed Thameur Sassi
 - Mariam Traore
 - Oscar Lavolet
+
+### Remise:
+-Fichier SQL: ProjetBD_questions.sql
+-Normalisation: Normalisation.projet.pdf
+-Model Entité association et relationnel: EA_relationel.pdf
