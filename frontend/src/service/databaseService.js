@@ -55,7 +55,7 @@ const databaseService = {
 
   getQueryDescriptions: () => {
     return [
-      {
+/*       {
         id: 1,
         title: "Livres empruntés",
         description: "Liste tous les livres empruntés par l'adhérent #1"
@@ -79,13 +79,13 @@ const databaseService = {
         id: 5,
         title: "Profil adhérents",
         description: "Statistiques des emprunts par adhérent avec leurs livres récents"
-      },
+      }, */
       {
         id: 6,
         title: "Tendances par période",
         description: "Analyse des tendances de genres par décennie"
       },
-      {
+/*       {
         id: 7,
         title: "Statistiques auteurs",
         description: "Performance des auteurs par ratio d'emprunts"
@@ -94,7 +94,7 @@ const databaseService = {
         id: 8,
         title: "Durée par genre",
         description: "Durée moyenne d'emprunt et taux de retard par genre"
-      },
+      }, */
       {
         id: 9,
         title: "État des commandes",

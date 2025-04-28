@@ -15,10 +15,10 @@ function App() {
   const [queryDescriptions, setQueryDescriptions] = useState([]);
 
   const teamMembers = [
-    'Nom du membre 1',
-    'Nom du membre 2',
-    'Nom du membre 3',
-    'Nom du membre 4'
+    'Meriem Ghaoui',
+    'Mohamed Thameur Sassi',
+    'Mariam Traore',
+    'Oscar Lavolet'
   ];
 
   useEffect(() => {

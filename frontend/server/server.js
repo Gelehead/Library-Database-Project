@@ -9,13 +9,6 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'bibliotheque',
-  password: 'your_password',
-  port: 5432,
-});
 
 pool.query('SELECT NOW()', (err, res) => {
   if (err) {
